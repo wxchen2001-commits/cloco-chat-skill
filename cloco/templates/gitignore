@@ -1,0 +1,64 @@
+# Secrets and local configuration
+.env
+.env.local
+.claude/settings.local.json
+.claude/state/
+.claude/plans/
+.claude/specs/
+
+# Data: contents never tracked; the registry and READMEs are
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/README.md
+!data/registry.json
+*.parquet
+*.dta
+*.rds
+*.feather
+*.sas7bdat
+.pgpass
+
+# Extracted text of legacy manuscripts and reference PDFs (/revive intake)
+quality_reports/revival/*/extracted/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.out
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+*.xdv
+paper/**/*.pdf
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+*.swp
+*.swo
+*~
+
+# Lean build artefacts and the Mathlib package cache (~5 GB)
+lean/.lake/

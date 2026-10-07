@@ -1,0 +1,13 @@
+This repository repackages cloco (https://github.com/jfimbett/cloco) by
+Juan F. Imbet for use as a single Agent Skill in the Claude chat interface.
+
+The research-pipeline design and the contents of cloco/agents, cloco/rules,
+cloco/scripts, cloco/templates and cloco/workflows are Juan F. Imbet's work.
+Changes made here: file layout, path rewrites (.claude/... -> CLOCO/...),
+one patch to scripts/dashboard.py (locate git_tools.py next to itself), and
+the chat instructions in cloco/SKILL.md (tools/SKILL.head.md).
+
+cloco's README declares the MIT licence. At the upstream commit recorded in
+cloco/reference/SOURCE.md the repository did not ship a LICENSE file; this
+repackaging is distributed under MIT on the basis of that declaration. If the
+upstream author's terms differ, they prevail for the upstream portions.
